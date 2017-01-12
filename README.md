@@ -3,6 +3,13 @@ The purpose of this repo is to create a way for developers to easily begin using
 the latest frontend dev tools in their workflow while still adhering to the AEM
 life.
 
+## Assumptions
+The gulp pipeline makes a few assumptions that you can checkout by looking at it more indepth, but I'll do a quick overview here. 
+
+1. In your component's clientlibs you should have an es6 directory and a sass directory which you put your respective files. You'll also need to add the compiled names to the js/css.txt files like normal (with *.css/js).
+2. These files should go directly under your jcr_root.
+3. You have vault added to your path, you can find more info here: https://docs.adobe.com/docs/en/aem/6-2/develop/dev-tools/ht-vlttool.html
+
 ## Things to do
 1. Integrate into Maven?
 2. Add in polyfills for other es2015 features.
